@@ -1,5 +1,4 @@
 require "jekyll"
 require "jekyll/components/version"
-
-module Jekyll
-end
+require "jekyll/components/block"
+require "jekyll/components/tag"

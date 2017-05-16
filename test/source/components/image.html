@@ -1,0 +1,50 @@
+---
+title: "Image"
+type: "Component"
+---
+
+{% img
+  alt: "alt"
+  class: "one"
+  height: "200"
+  src: "test.png"
+  style: "background: red;"
+  title: "title"
+  width: "400"
+%}
+
+{% Image class: "nope" %}
+
+{% img
+  class: "default"
+  alt: "alt"
+  crossorigin: "crossorigin"
+  id: "id"
+  ismap: "ismap"
+  longdesc: "longdesc"
+  usemap: "usemap"
+%}
+
+{% img
+  class: "data-attr"
+  data_jared: "cupcake"
+%}
+
+{% img
+  class: "no-lazy"
+  src: "test.png"
+  skip_lazy: true
+%}
+
+{% img
+  class: "responsive"
+  srcset: "test.png"
+  width: "600"
+%}
+
+{% img
+  class: "number-dimension"
+  srcset: "test.png"
+  width: 600
+  height: 400
+%}
