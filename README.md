@@ -1,4 +1,4 @@
-# jekyll-components 🌟
+# jekyll-components 🌟 [![Build Status](https://travis-ci.org/helpscout/jekyll-components.svg?branch=master)](https://travis-ci.org/helpscout/jekyll-components) [![Gem Version](https://badge.fury.io/rb/jekyll-components.svg)](https://badge.fury.io/rb/jekyll-components)
 
 A Jekyll library for building component-based UI
 
