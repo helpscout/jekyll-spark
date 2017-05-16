@@ -1,4 +1,4 @@
-# jekyll-components
+# 🌟 jekyll-components
 
 A Jekyll library for building component-based UI
 
