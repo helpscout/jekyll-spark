@@ -47,7 +47,7 @@ module Jekyll
         end
       }
 
-      template
+      return template
     end
 
     def selector_data_props(attr = @attributes)
@@ -58,7 +58,7 @@ module Jekyll
         end
       }
 
-      template
+      return template
     end
 
     def selector_props(attr = @default_selector_attr)
@@ -66,7 +66,7 @@ module Jekyll
       template += selector_data_props
       template += selector_default_props(attr)
 
-      template
+      return template
     end
 
     def set_props(props = Hash.new)
@@ -98,15 +98,6 @@ module Jekyll
       return content
     end
 
-    def markdown_file?()
-      file = @context["page"]["name"]
-      if file
-        file.include?(".md") || file.include?(".markdown")
-      else
-        false
-      end
-    end
-
     def render(context)
       @context = context
       @site = @context.registers[:site]
@@ -114,20 +105,18 @@ module Jekyll
       serialize_data
       output = template(context)
 
-      # if (markdown_file?)
-      #   output = "{::nomarkdown type='html'}#{output}{:/nomarkdown}"
-      # end
-
       if (output.instance_of?(String))
         output = Liquid::Template.parse(output).render()
         output = @@compressor.compress(unindent(output))
       else
-        output
+        output = ""
       end
+
+      return output
     end
 
     def template(context = @context)
-      context
+      return context
     end
 
   end
