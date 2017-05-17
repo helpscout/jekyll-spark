@@ -125,5 +125,5 @@ Below is a comparison between some syntax differences between Jekyll Components 
 | --- | --- | --- |
 | `@props["key"]` | `this.props.key` | Component prop data. |
 | `render =` | `render() { return ... } ` | Outputting the component's markup. |
-| `%Q[ ... ]` | ` `...` ` | String interpolation wrapper. |
+| `%Q[ ... ]` | `` `...` `` | String interpolation wrapper. |
 | `#{var}` | `${var} ` | String interpolated variable. |
