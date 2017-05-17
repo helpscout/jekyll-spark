@@ -130,7 +130,7 @@ Below is a comparison between some syntax differences between Jekyll Components 
 
 
 
-### Creating a block component
+## Creating a block component
 
 Let's say we want to update our component to be a block instead. It'll make it more intuitive to add caption. Maybe something like:
 
