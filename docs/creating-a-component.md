@@ -1,7 +1,5 @@
 # Creating a component
 
-## Tag
-
 Let's create our first component under `_plugins/tags`. We'll call it `napolean.rb`. Below is the starting template of any Jekyll Component:
 
 ```ruby
