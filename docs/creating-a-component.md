@@ -63,7 +63,9 @@ That's it!
 
 ### Adding props
 
-"Props" are data that we can pass to our component. For our example, let's provide the ability to adjust the width of our image as well as provide a caption:
+"Props" are data that we can pass to our component.
+
+For our example, let's provide the ability to adjust the width of our image as well as provide a caption:
 
 ```html
 {% Napolean
