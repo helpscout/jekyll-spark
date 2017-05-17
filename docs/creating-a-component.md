@@ -127,3 +127,34 @@ Below is a comparison between some syntax differences between Jekyll Components 
 | `render =` | `render() { return ... } ` | Outputting the component's markup. |
 | `%Q[ ... ]` | `` `...` `` | String interpolation wrapper. |
 | `#{var}` | `${var} ` | String interpolated variable. |
+
+
+
+### Creating a block component
+
+Let's say we want to update our component to be a block instead. It'll make it more intuitive to add caption. Maybe something like:
+
+```html
+{% Napolean width: "300" %}
+  This tastes like the cow got into an onion patch.
+{% endNapolean %}
+```
+
+It's pretty easy! The only thing we need to change in our `napolean.rb` file is the Class our component inherits from.
+
+Before:
+```ruby
+class NapoleanComponent < ComponentTag
+```
+
+After:
+```ruby
+class NapoleanComponent < ComponentBlock
+```
+
+
+### That's it!
+
+You've got the basics to create some awesome components in Jekyll.
+
+![Yesssssssssssssssss](https://media.giphy.com/media/uTuLngvL9p0Xe/giphy.gif)
