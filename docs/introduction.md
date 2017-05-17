@@ -42,4 +42,4 @@ my-jekyll/
 
 ### Up next
 
-Learn how to [create a component](/creating-a-component.md).
+Learn how to [create a component](creating-a-component.md).
