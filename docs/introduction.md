@@ -40,6 +40,6 @@ my-jekyll/
 ```
 
 
-## Next
+### Up next
 
 Learn how to [create a component](https://github.com/helpscout/jekyll-components/blob/master/docs/creating-a-component.md).
