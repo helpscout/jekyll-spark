@@ -8,7 +8,8 @@ We'll call it `napolean.rb`! Below is the [starting template](https://github.com
 require "jekyll-components"
 
 module Jekyll
-  class NapoleanComponent < ComponentTag # Create your component class
+  # Create your component class
+  class NapoleanComponent < ComponentTag
     def template(context)
       render = %Q[
         # Put markup here!
@@ -17,6 +18,7 @@ module Jekyll
   end
 end
 
+# Register your component with Liquid
 Liquid::Template.register_tag(
   "Napolean", # Namespace your component
   Jekyll::NapoleanComponent, # Pass your newly created component class
