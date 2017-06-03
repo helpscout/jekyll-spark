@@ -1,4 +1,4 @@
-# jekyll-jet 🚀 [![Build Status](https://travis-ci.org/helpscout/jekyll-jet.svg?branch=master)](https://travis-ci.org/helpscout/jekyll-jet) [![Gem Version](https://badge.fury.io/rb/jekyll-jet.svg)](https://badge.fury.io/rb/jekyll-jet)
+# Jet 🚀 [![Build Status](https://travis-ci.org/helpscout/jekyll-jet.svg?branch=master)](https://travis-ci.org/helpscout/jekyll-jet) [![Gem Version](https://badge.fury.io/rb/jekyll-jet.svg)](https://badge.fury.io/rb/jekyll-jet)
 
 A Jekyll library for building fast component-based UI.
 
