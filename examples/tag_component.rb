@@ -1,4 +1,4 @@
-require "jekyll-components"
+require "jekyll-jet"
 
 module Jekyll
   class ExampleTagComponent < ComponentTag
