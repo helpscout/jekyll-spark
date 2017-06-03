@@ -2,10 +2,10 @@
 
 Let's create our first component under `_plugins/tags`.
 
-We'll call it `napolean.rb`! Below is the [starting template](https://github.com/helpscout/jekyll-jet/tree/master/examples) of any Jekyll Component:
+We'll call it `napolean.rb`! Below is the [starting template](https://github.com/helpscout/jekyll-spark/tree/master/examples) of any Jekyll Component:
 
 ```ruby
-require "jekyll-jet"
+require "jekyll-spark"
 
 module Jekyll
   # Create your component class
@@ -33,7 +33,7 @@ Let's make this component render this GIF:
 
 
 ```ruby
-require "jekyll-jet"
+require "jekyll-spark"
 
 module Jekyll
   class NapoleanComponent < ComponentTag
@@ -85,7 +85,7 @@ You can totally write everything in a single line (below). However, we recommend
 In order to use our new `width` and `caption` props, we have to update our `template` method in our Napolean component. Prop data being passed to our component will be available in a `@prop` instance variable in our `.rb` file:
 
 ```ruby
-require "jekyll-jet"
+require "jekyll-spark"
 
 module Jekyll
   class NapoleanComponent < ComponentTag

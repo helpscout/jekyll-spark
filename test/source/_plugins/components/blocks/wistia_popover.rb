@@ -1,4 +1,4 @@
-require "jekyll-jet"
+require "jekyll-spark"
 
 module Jekyll
   class WistiaPopoverComponent < ComponentBlock

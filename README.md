@@ -1,4 +1,4 @@
-# Jet 🚀 [![Build Status](https://travis-ci.org/helpscout/jekyll-jet.svg?branch=master)](https://travis-ci.org/helpscout/jekyll-jet) [![Gem Version](https://badge.fury.io/rb/jekyll-jet.svg)](https://badge.fury.io/rb/jekyll-jet)
+# Spark ✨ [![Build Status](https://travis-ci.org/helpscout/jekyll-spark.svg?branch=master)](https://travis-ci.org/helpscout/jekyll-spark) [![Gem Version](https://badge.fury.io/rb/jekyll-spark.svg)](https://badge.fury.io/rb/jekyll-spark)
 
 A Jekyll library for building fast component-based UI.
 
@@ -15,7 +15,7 @@ This library was heavily inspired by view/component creation from modern Javascr
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'jekyll-jet'
+gem 'jekyll-spark'
 ```
 
 And then execute:
@@ -25,16 +25,16 @@ bundle
 
 Or install it yourself as:
 ```
-gem install jekyll-jet
+gem install jekyll-spark
 ```
 
 
 
 ## Documentation
 
-**[View the docs](https://github.com/helpscout/jekyll-jet/blob/master/docs/introduction.md)** to get started with Jekyll Components!
+**[View the docs](https://github.com/helpscout/jekyll-spark/blob/master/docs/introduction.md)** to get started with Jekyll Components!
 
 
 ## Examples
 
-**[View the starter](https://github.com/helpscout/jekyll-jet/tree/master/examples)** Component view files.
+**[View the starter](https://github.com/helpscout/jekyll-spark/tree/master/examples)** Component view files.
