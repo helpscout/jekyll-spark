@@ -118,17 +118,16 @@ class ImageComponent < JekyllUnitTest
     assert(image["srcset"].include?("#{width * 2}w"))
   end
 
-  should "generate responsive image sizes when using srcset" do
-    markup = get_component_page("Image")
-    doc = Nokogiri::HTML(markup)
-    image = doc.css("img.responsive")[0]
-    width = 600
+  should "not generate w image srcset, if width is missing" do
+    markup = %Q[
+      {% img
+        srcset: "hello.png"
+        height: 100
+      %}
+    ]
+    @joule.render(markup)
+    image = @joule.find("img")
 
-    assert(image["data-src"].include?("@1x"))
-    assert(!image["data-src"].include?("@2x"))
-    assert(image["srcset"].include?("@1x"))
-    assert(image["srcset"].include?("@2x"))
-    assert(image["srcset"].include?("#{width}w"))
-    assert(image["srcset"].include?("#{width * 2}w"))
+    assert(!image["srcset"].include?("w"))
   end
 end

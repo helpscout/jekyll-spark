@@ -1,3 +1,16 @@
+require "simplecov"
+require "coveralls"
+
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+  SimpleCov::Formatter::HTMLFormatter,
+  Coveralls::SimpleCov::Formatter
+]
+
+SimpleCov.start do
+  add_filter "/source/"
+  # add_filter "/test/"
+end
+
 require 'rubygems'
 require 'minitest/autorun'
 require 'minitest/reporters'
@@ -7,6 +20,7 @@ require 'ostruct'
 require 'rspec/mocks'
 
 require 'jekyll'
+require 'jekyll/joule'
 
 Jekyll.logger = Logger.new(StringIO.new)
 
@@ -31,6 +45,7 @@ class JekyllUnitTest < Minitest::Test
     @site.generate
     @site.render
     @pages = @site.pages
+    @joule = Jekyll::Joule::Site.new(@site)
   end
 
   def get_component_page(title)

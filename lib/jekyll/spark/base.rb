@@ -27,8 +27,6 @@ module Jekyll
         markup.scan(Liquid::TagAttributes) do |key, value|
           @attributes[key] = Liquid::Expression.parse(value)
         end
-      else
-        raise SyntaxError.new(options[:locale].t("errors.syntax.include".freeze))
       end
     end
 
