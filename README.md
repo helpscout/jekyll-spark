@@ -1,4 +1,4 @@
-# Spark ✨ [![Build Status](https://travis-ci.org/helpscout/jekyll-spark.svg?branch=master)](https://travis-ci.org/helpscout/jekyll-spark) [![Gem Version](https://badge.fury.io/rb/jekyll-spark.svg)](https://badge.fury.io/rb/jekyll-spark)
+# Spark ✨ [![Build Status](https://travis-ci.org/helpscout/jekyll-spark.svg?branch=master)](https://travis-ci.org/helpscout/jekyll-spark) [![Gem Version](https://badge.fury.io/rb/jekyll-spark.svg)](https://badge.fury.io/rb/jekyll-spark) [![Coverage Status](https://coveralls.io/repos/github/helpscout/jekyll-spark/badge.svg?branch=master)](https://coveralls.io/github/helpscout/jekyll-spark?branch=master)
 
 A Jekyll library for building fast component-based UI.
 
