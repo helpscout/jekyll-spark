@@ -1,9 +1,11 @@
 require "htmlcompressor"
 require "jekyll"
 require "liquid"
+require "dot_hash"
 
 module Jekyll
   module ComponentBase
+    attr_accessor :props, :content
     include Liquid::StandardFilters
 
     @@compressor = HtmlCompressor::Compressor.new({
@@ -68,16 +70,20 @@ module Jekyll
     end
 
     def set_props(props = Hash.new)
-      @context[@context_name] = @props = @props.merge(props)
+      @props = DotHash.load(@props.merge(props))
+      # @context[@context_name] = @props
     end
 
     def serialize_data
       data = Hash.new
+      @attributes["children"] = @content
       @attributes["content"] = @content
       if @attributes.length
         @attributes.each do |key, value|
-          val = @context.evaluate(value)
-          data[key] = val
+          if @context
+            value = @context.evaluate(value)
+          end
+          data[key] = value
         end
       end
 
