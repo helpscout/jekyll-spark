@@ -21,20 +21,6 @@ class SparkComponentBase < JekyllUnitTest
       assert_equal(o.props["name"], "Name")
     end
 
-    should "support dot hash" do
-      o = Object.new
-      o.extend(Jekyll::ComponentBase)
-      o.props = Hash.new
-
-      h = Hash.new
-      h["name"] = "Name"
-
-      o.set_props(h)
-
-      assert_equal(o.props["name"], "Name")
-      assert_equal(o.props.name, "Name")
-    end
-
     should "handle null key/values" do
       o = Object.new
       o.extend(Jekyll::ComponentBase)
@@ -48,7 +34,6 @@ class SparkComponentBase < JekyllUnitTest
       o.set_props(h)
 
       assert_equal(o.props["name"], "Name")
-      assert_equal(o.props.name, "Name")
     end
   end
 

@@ -1,7 +1,6 @@
 require "htmlcompressor"
 require "jekyll"
 require "liquid"
-require "dot_hash"
 
 module Jekyll
   module ComponentBase
@@ -70,8 +69,7 @@ module Jekyll
     end
 
     def set_props(props = Hash.new)
-      @props = DotHash.load(@props.merge(props))
-      # @context[@context_name] = @props
+      @props = @props.merge(props)
     end
 
     def serialize_data
