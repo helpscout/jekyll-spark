@@ -122,7 +122,7 @@ class ImageComponent < JekyllUnitTest
     markup = %Q[
       {% img
         srcset: "hello.png"
-        height: 100
+        height: 10
       %}
     ]
     @joule.render(markup)

@@ -28,9 +28,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "minitest-reporters"
   spec.add_development_dependency "minitest-profile"
   spec.add_development_dependency "minitest", "~> 5.8"
-  spec.add_development_dependency "nokogiri", "~> 1.7.1"
   spec.add_development_dependency "rspec-mocks"
-  spec.add_development_dependency "jekyll-joule"
+  spec.add_development_dependency "jekyll-joule", "~> 0.2.0"
   spec.add_development_dependency "shoulda"
   spec.add_development_dependency "kramdown"
 end

@@ -8,7 +8,9 @@ module Jekyll
     include Liquid::StandardFilters
 
     @@compressor = HtmlCompressor::Compressor.new({
-      :remove_comments => true
+      :remove_comments => true,
+      :remove_intertag_spaces => true,
+      :preserve_line_breaks => false,
     }).freeze
 
     def initialize(tag_name, markup, tokens)
